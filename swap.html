@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+    <script>
+        function Swap(){
+              
+          var a=parseInt(document.getElementById("in1").value);
+          var b=parseInt(document.getElementById("in2").value);
+          console.log("a="+a+","+"b="+b);
+          console.log("a="+((a+b)-a));
+          console.log("b="+((a+b)-b));  
+          document.getElementById("succ").innerHTML="Swap successfully" ;
+  
+        }
+  
+     </script> 
+</head>
+<body>
+    <center>
+    <h1>Swap numbers without using temp variables</h1><hr>
+    <input type="number" id="in1" placeholder="enter a number1"><br><br>
+    <input type="number" id="in2" placeholder="enter a number2"><br><br>
+    <input type="button" value="swap" onClick="Swap()" ><br><br>
+    <label id="succ"></label>
+    </center>
+   
+</body>
+</html>
